@@ -1,5 +1,6 @@
 import random
 
+
 class Card(object):
     def __init__(self, suit, value):
         self.suit = suit
@@ -54,6 +55,11 @@ class NextCard(object):
         for card1 in self.nextcard:
             card1.show()
 
+
+
+
+
+
 deck = Deck()
 deck.shuffle()
 
@@ -62,6 +68,8 @@ playerHand = human.draw(deck)
 
 newcard = NextCard()
 nextCard = newcard.draw(deck)
+
+
 
 
 
@@ -88,3 +96,4 @@ while play.lower()== "y":
             print("Congratulations! You guessed correctly! The next card was ", nextCard)
 else:
     print("The game is over.")
+    
